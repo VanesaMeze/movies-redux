@@ -104,6 +104,7 @@ const AppMovies = () => {
       <ul style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
         {movies && movies.length ? (
           movies.map((movie) => {
+            console.log(movie);
             return <MovieRow key={movie.id} movie={movie} />;
           })
         ) : (
